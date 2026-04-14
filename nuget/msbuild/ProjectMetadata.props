@@ -1,0 +1,18 @@
+<Project>
+
+  <PropertyGroup Label="Project Metadata">
+    <Authors>Fati Iseni</Authors>
+    <Company>Pozitron Group</Company>
+    <Copyright>Copyright © 2026 Pozitron Group</Copyright>
+    <Product>NuSeal License Validation</Product>
+
+    <PackageProjectUrl>https://github.com/fiseni/NuSeal</PackageProjectUrl>
+    <RepositoryUrl>https://github.com/fiseni/NuSeal</RepositoryUrl>
+    <PublishRepositoryUrl>true</PublishRepositoryUrl>
+    <RepositoryType>git</RepositoryType>
+    <PackageLicenseExpression>MIT</PackageLicenseExpression>
+    <PackageReadmeFile>readme-nuget.md</PackageReadmeFile>
+    <PackageIcon>pozitronicon.png</PackageIcon>
+  </PropertyGroup>
+
+</Project>
