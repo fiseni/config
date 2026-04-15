@@ -35,15 +35,16 @@
 
     <IsPackable>true</IsPackable>
     <GeneratePackageOnBuild>false</GeneratePackageOnBuild>
-    <TargetsForTfmSpecificBuildOutput>$(TargetsForTfmSpecificBuildOutput);CopyProjectReferencesToPackage;CopyAssemblyToPackage</TargetsForTfmSpecificBuildOutput>
+    <TargetsForTfmSpecificBuildOutput>$(TargetsForTfmSpecificBuildOutput);CopyProjectReferencesToPackage</TargetsForTfmSpecificBuildOutput>
     <BuildOutputTargetFolder>tasks</BuildOutputTargetFolder>
-    <!--<DevelopmentDependency>true</DevelopmentDependency>-->
-    <!--<SuppressDependenciesWhenPacking>true</SuppressDependenciesWhenPacking>-->
+    <DevelopmentDependency>true</DevelopmentDependency>
+    <SuppressDependenciesWhenPacking>true</SuppressDependenciesWhenPacking>
     <NoPackageAnalysis>true</NoPackageAnalysis>
   </PropertyGroup>
 
   <ItemGroup Label="Packaging files">
-    <None Include="build\*" Pack="true" PackagePath="buildMultiTargeting\" />
+    <None Include="build\*" Pack="true" PackagePath="build\" />
+    <!-- <None Include="build\*" Pack="true" PackagePath="buildMultiTargeting\" /> -->
   </ItemGroup>
 
   <ItemGroup>
@@ -59,17 +60,6 @@
       <BuildOutputInPackage
         Include="@(ReferenceCopyLocalPaths)"
         TargetPath="%(ReferenceCopyLocalPaths.DestinationSubPath)" />
-    </ItemGroup>
-  </Target>
-
-  <Target
-    Name="CopyAssemblyToPackage"
-    DependsOnTargets="ResolveReferences">
-
-    <ItemGroup>
-      <BuildOutputInPackage
-        Include="$(TargetDir)$(AssemblyName).dll"
-        TargetPath="..\..\lib\$(TargetFramework)" />
     </ItemGroup>
   </Target>
 
