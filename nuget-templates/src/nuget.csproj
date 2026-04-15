@@ -1,0 +1,47 @@
+<Project Sdk="Microsoft.NET.Sdk">
+
+  <Import Project="..\ProjectMetadata.props" />
+  <Import Project="..\ProjectMetadata.targets" />
+
+  <PropertyGroup>
+    <AssemblyName>Pozitron_Project</AssemblyName>
+    <RootNamespace>Pozitron_Project</RootNamespace>
+    <TargetFramework>net10.0</TargetFramework>
+    <ImplicitUsings>enable</ImplicitUsings>
+    <Nullable>enable</Nullable>
+    <LangVersion>latest</LangVersion>
+  </PropertyGroup>
+
+  <PropertyGroup Label="Package Metadata">
+    <Version>1.0.0</Version>
+    <PackageId>Pozitron_NuGet</PackageId>
+    <Title>Pozitron_NuGet</Title>
+    <Description></Description>
+    <Summary></Summary>
+    <PackageTags>fiseni pozitron</PackageTags>
+    <PackageReleaseNotes>
+      Refer to Releases page for details.
+      https://github.com/fiseni/Pozitron_Repo/releases
+    </PackageReleaseNotes>
+  </PropertyGroup>
+
+  <PropertyGroup Label="Symbols">
+    <IncludeSymbols>true</IncludeSymbols>
+    <SymbolPackageFormat>snupkg</SymbolPackageFormat>
+    <EmbedUntrackedSources>true</EmbedUntrackedSources>
+    <ContinuousIntegrationBuild Condition="'$(GITHUB_ACTIONS)' == 'true'">true</ContinuousIntegrationBuild>
+
+    <!-- Alternative to snupkg, embed symbols or publish as separate pdb files -->
+    <!--<DebugType>Embedded</DebugType>-->
+    <!--<AllowedOutputExtensionsInPackageBuildOutputFolder>$(AllowedOutputExtensionsInPackageBuildOutputFolder);.pdb</AllowedOutputExtensionsInPackageBuildOutputFolder>-->
+  </PropertyGroup>
+
+  <PropertyGroup Label="Build and Packaging">
+    <Deterministic>true</Deterministic>
+    <GenerateDocumentationFile>true</GenerateDocumentationFile>
+
+    <IsPackable>true</IsPackable>
+    <GeneratePackageOnBuild>false</GeneratePackageOnBuild>
+  </PropertyGroup>
+
+</Project>
