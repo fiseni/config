@@ -4,10 +4,10 @@
     <Authors>Fati Iseni</Authors>
     <Company>Pozitron Group</Company>
     <Copyright>Copyright © 2026 Pozitron Group</Copyright>
-    <Product>NuSeal License Validation</Product>
+    <Product></Product>
 
-    <PackageProjectUrl>https://github.com/fiseni/NuSeal</PackageProjectUrl>
-    <RepositoryUrl>https://github.com/fiseni/NuSeal</RepositoryUrl>
+    <PackageProjectUrl>https://github.com/fiseni/Pozitron_Repo</PackageProjectUrl>
+    <RepositoryUrl>https://github.com/fiseni/Pozitron_Repo</RepositoryUrl>
     <PublishRepositoryUrl>true</PublishRepositoryUrl>
     <RepositoryType>git</RepositoryType>
     <PackageLicenseExpression>MIT</PackageLicenseExpression>

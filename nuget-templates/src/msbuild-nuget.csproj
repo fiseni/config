@@ -4,8 +4,8 @@
   <Import Project="..\ProjectMetadata.targets" />
 
   <PropertyGroup>
-    <AssemblyName>NuSeal_0_4_0</AssemblyName>
-    <RootNamespace>NuSeal</RootNamespace>
+    <AssemblyName>Pozitron_Project</AssemblyName>
+    <RootNamespace>Pozitron_Project</RootNamespace>
     <TargetFramework>netstandard2.0</TargetFramework>
     <ImplicitUsings>disable</ImplicitUsings>
     <Nullable>enable</Nullable>
@@ -14,14 +14,14 @@
 
   <PropertyGroup Label="Package Metadata">
     <Version>0.4.1</Version>
-    <PackageId>NuSeal</PackageId>
-    <Title>NuSeal</Title>
-    <Description>A library that validates licenses during build time.</Description>
-    <Summary>A library that validates licenses during build time.</Summary>
-    <PackageTags>fiseni pozitron nuseal nuget license msbuild</PackageTags>
+    <PackageId>Pozitron_NuGet</PackageId>
+    <Title>Pozitron_NuGet</Title>
+    <Description></Description>
+    <Summary></Summary>
+    <PackageTags>fiseni pozitron</PackageTags>
     <PackageReleaseNotes>
       Refer to Releases page for details.
-      https://github.com/fiseni/NuSeal/releases
+      https://github.com/fiseni/Pozitron_Repo/releases
     </PackageReleaseNotes>
   </PropertyGroup>
 
@@ -49,11 +49,6 @@
   <ItemGroup>
     <PackageReference Include="Microsoft.Build.Utilities.Core" PrivateAssets="all" ExcludeAssets="runtime" />
     <PackageReference Include="System.Text.Json" PrivateAssets="all" ExcludeAssets="runtime" />
-    <PackageReference Include="BouncyCastle.Cryptography" PrivateAssets="all" />
-  </ItemGroup>
-
-  <ItemGroup>
-    <InternalsVisibleTo Include="NuSeal.Tests" />
   </ItemGroup>
 
   <Target
